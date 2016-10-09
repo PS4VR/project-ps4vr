@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux-immutable';
 import sample from './sampleReducers';
+import routerReducer  from './routeReducers'
 
 const rootReducer = combineReducers({
-  sample
+  sample,
+  routing: routerReducer
 });
 
 export default rootReducer;        

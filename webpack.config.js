@@ -39,6 +39,7 @@ module.exports = {
   },
   // 啟動開發測試用 server 設定（不能用在 production）
   devServer: {
+    historyApiFallback: true,
     inline: true,
     port: 9453
   },

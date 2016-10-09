@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-const NewsMain = ({
+const VideosMain = ({
 }) => (
   <div>
-    <a>news</a>
+    <a>videos</a>
   </div>
 );
 
-export default NewsMain;
+export default VideosMain;

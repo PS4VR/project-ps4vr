@@ -28,14 +28,17 @@ module.exports = {
         exclude: /bundle\.jsx$/
       }
     ],
-    loaders: [{
-      test: /\.jsx$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader',
-      query: {
-        presets: ['es2015', 'react']
+    loaders: [
+      {
+        test: /\.jsx$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {presets: ['es2015', 'react']}
       },
-    }],
+      {
+        test: /\.s?css$/, loader: 'style!css!sass'
+      }
+    ],
   },
   // 啟動開發測試用 server 設定（不能用在 production）
   devServer: {

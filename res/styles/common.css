@@ -1,0 +1,21 @@
+.itemPadding {
+    padding: 0px 10px 0 10px;
+}
+
+.itemContent {
+    padding: 0px;
+    height:80px;
+    border-radius:5px;
+    border:2px solid #343d46;
+    max-width: 800px;
+    margin: 10px auto 10px auto;
+}
+
+.itemTitle {
+    margin-top:0px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}

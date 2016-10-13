@@ -8,7 +8,7 @@ import VideosMain from './components/Videos/VideosMain';
 import store from './store';
 import {IndexRoute, Router, Route, browserHistory} from 'react-router';
 import {syncHistoryWithStore} from 'react-router-redux';
-
+import '../res/styles/common.css';
 
 const history = syncHistoryWithStore(browserHistory, store, {
   selectLocationState (state) {

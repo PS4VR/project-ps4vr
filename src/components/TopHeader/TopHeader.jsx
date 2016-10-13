@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 import {Link} from 'react-router';
 
-//todo:: add tab state active for route
+//TODO:: add tab state active for route
+
 export default class TopHeader extends React.Component {
   render() {
     return (
@@ -32,4 +33,3 @@ export default class TopHeader extends React.Component {
     );
   }
 }
-// <NavItem eventKey={1} href="#/news">新聞</NavItem>

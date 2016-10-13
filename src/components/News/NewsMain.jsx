@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-const NewsMain = ({
-}) => (
-  <div>
-    <a>news</a>
+import NewsList from './NewsList';
+import PaginationAdvanced from '../Common/PaginationAdvanced'
+const NewsMain = ({}) => (
+  <div >
+    <div className="text-center">
+      <PaginationAdvanced className="center"/>
+    </div>
+    <ul className="itemPadding">
+      <NewsList/>
+    </ul>
   </div>
 );
 

@@ -4,7 +4,7 @@ import {Provider} from 'react-redux';
 import Main from './components/Main/Main';
 import NewsMain from './components/News/NewsMain';
 import GameMain from './components/Games/GameMain';
-import VideoMain from './components/Videos/VideoMain';
+import VideoMain from './components/Videos/VideoMain'
 import store from './store';
 import {IndexRoute, Router, Route, browserHistory} from 'react-router';
 import {syncHistoryWithStore} from 'react-router-redux';

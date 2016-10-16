@@ -7,20 +7,71 @@ html, body {
 }
 
 .itemPadding {
-    padding: 0px 10px 0 10px;
+    padding: 0px;
 }
 
-.itemContent {
+.newsItem {
     padding: 0px;
-    height:80px;
-    border-radius:5px;
-    border:2px solid #343d46;
+    height:102px;
+    border-radius:1px;
+    border:1px solid #343d46;
     max-width: 800px;
     margin: 10px auto 10px auto;
 }
 
-.itemTitle {
-    margin-top:0px;
+.listItemImage {
+    max-width: 20%;
+    max-height: 100px;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.listItemContent {
+}
+.listItemTitle {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.listItemSubTitle {
+    overflow: hidden;
+    /* for set '...' in absolute position */
+    position: relative;
+    /* use this value to count block height */
+    line-height: 1.25em;
+    /* max-height = line-height (1.2) * lines max number (3) */
+    max-height: 3.6em;
+    /* fix problem when last visible word doesn't adjoin right side  */
+    text-align: justify;
+
+    /* */
+
+    margin-right: -1.5em;
+    padding-left: 1em;
+    padding-right: 1.5em;
+}
+
+.listItemSubTitle:before {
+    /* points in the end */
+    content: '...';
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of block */
+    right: 0.5em;
+    bottom: 0;
+}
+.listItemSubTitle:after {
+    /* points in the end */
+    content: '';
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of text */
+    right: 0;
+    width: 1em;
+    /* set width and height */
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
 }
 
 .center {

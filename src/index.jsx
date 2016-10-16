@@ -3,8 +3,8 @@ import ReactDom from 'react-dom';
 import {Provider} from 'react-redux';
 import Main from './components/Main/Main';
 import NewsMain from './components/News/NewsMain';
-import GamesMain from './components/Games/GamesMain';
-import VideosMain from './components/Videos/VideosMain';
+import GameMain from './components/Games/GameMain';
+import VideoMain from './components/Videos/VideoMain';
 import store from './store';
 import {IndexRoute, Router, Route, browserHistory} from 'react-router';
 import {syncHistoryWithStore} from 'react-router-redux';
@@ -22,8 +22,8 @@ ReactDom.render(
       <Route path="/" component={Main}>
         <IndexRoute component={NewsMain}/>
         <Route path="/news" component={NewsMain}/>
-        <Route path="/games" component={GamesMain}/>
-        <Route path="/videos" component={VideosMain}/>
+        <Route path="/games" component={GameMain}/>
+        <Route path="/videos" component={VideoMain}/>
       </Route>
     </Router>
   </Provider>,

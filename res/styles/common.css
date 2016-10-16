@@ -1,3 +1,11 @@
+html, body {
+  max-height: 100%; 
+}
+
+#app {
+  max-height: 100%;
+}
+
 .itemPadding {
     padding: 0px 10px 0 10px;
 }
@@ -18,4 +26,29 @@
 .center {
     margin-left: auto;
     margin-right: auto;
+}
+
+.videoItem {
+  position: relative;
+  max-width: 800px;
+  margin: 20px auto 20px auto;
+  border: none;
+  background: inherit;
+}
+
+.videoItem iframe {
+  width: 560px;
+  height: 315px;
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+  .videoItem {
+    position: relative;
+    max-width: 400px;
+    margin: 0 0 0 0;
+  }
+  .videoItem iframe {
+    width: 350px;
+    height: 256px;
+  }
 }
